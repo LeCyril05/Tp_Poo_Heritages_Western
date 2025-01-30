@@ -18,5 +18,3 @@ int main()
 	jenny.sePresente();
 	jenny.boire();
 }
-
-,f heh ethryjryzjhr jr
