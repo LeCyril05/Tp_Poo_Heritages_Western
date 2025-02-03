@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-Dame::Dame(const string nom, const string boissonFavorite="lait", const string couleurRobe="blanche")
+Dame::Dame(const string nom/*=""*/, const string boissonFavorite/*="lait"*/, const string couleurRobe/*="blanche"*/)
 	:Humain(nom, boissonFavorite), couleurRobe(couleurRobe), etat("libre")
 {
 }

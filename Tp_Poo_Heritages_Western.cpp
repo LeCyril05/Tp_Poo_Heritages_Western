@@ -2,11 +2,12 @@
 #include <string>
 #include "Humain.h"
 #include "Dame.h"
+#include "Cowboy.h"
 using namespace std;
 
 int main()
 {
-	Humain lucky("Lucky Luke", "coca");
+	Cowboy lucky("Lucky Luke");
 	Humain* joe = new Humain("Joe Dalton", "whisky");
 
 
@@ -14,7 +15,7 @@ int main()
 	joe->sePresente();
 	lucky.boire();
 
-	Dame jenny("Jenny", "lait", "blanche");
+	Dame jenny("Jenny");
 	jenny.sePresente();
 	jenny.boire();
 }
