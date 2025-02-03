@@ -3,19 +3,28 @@
 #include "Humain.h"
 #include "Dame.h"
 #include "Cowboy.h"
+#include "Brigand.h"
 using namespace std;
 
 int main()
 {
-	Cowboy lucky("Lucky Luke");
-	Humain* joe = new Humain("Joe Dalton", "whisky");
-
-
-	lucky.sePresente();
-	joe->sePresente();
-	lucky.boire();
-
+	Cowboy lucky("Lucky Luke", "coca-cola");
 	Dame jenny("Jenny");
+	Brigand joe("Joe");
+
+	//1. La rencontre ...
+	lucky.sePresente();
 	jenny.sePresente();
-	jenny.boire();
+
+	//2. Mais un brigand arrive ...
+	joe.sePresente();
+	joe.kidnappe(jenny);
+
+	//3. Heureusement le cowboy s'interpose ...
+	lucky.sePresente();
+	joe.sePresente();
+	lucky.tire(joe);
+	lucky.emprisonne(joe);
+	lucky.libere(jenny);
+
 }

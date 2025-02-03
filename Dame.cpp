@@ -1,7 +1,19 @@
 #include "Dame.h"
+#include "Cowboy.h"
 #include <iostream>
 #include <string>
 using namespace std;
+
+void Dame::hurle()
+{
+	cout << "** " << getNom() << " hurle\n";
+	cout << "(" << nom << ") -- Au secours je me fais kidnapper !\n";
+}
+
+void Dame::remercie(Cowboy& cowboy)
+{
+	cout << "(" << nom << ") -- Merci " << cowboy.getNom() << " je suis enfin libre !\n";
+}
 
 Dame::Dame(const string nom/*=""*/, const string boissonFavorite/*="lait"*/, const string couleurRobe/*="blanche"*/)
 	:Humain(nom, boissonFavorite), couleurRobe(couleurRobe), etat("libre")
@@ -32,4 +44,16 @@ string Dame::getNom() const
 string Dame::getEtat() const
 {
 	return etat;
+}
+
+void Dame::seFaitKidnapper()
+{
+	etat = "kidnapee";
+	hurle();
+}
+
+void Dame::seFaitLiberer(Cowboy& cowboy)
+{
+	etat = "libre";
+	remercie(cowboy);
 }

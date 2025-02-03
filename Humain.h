@@ -14,6 +14,7 @@ public:
 	void parle(string);
 	void sePresente();
 	void setBoissonFav(string);
+	string getNom();
 	string getBoissonFav();
 	void boire();
 };

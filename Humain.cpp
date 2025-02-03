@@ -24,6 +24,11 @@ void Humain::setBoissonFav(string _boisson)
 		boissonFavorite = _boisson;
 }
 
+string Humain::getNom()
+{
+	return nom;
+}
+
 string Humain::getBoissonFav()
 {
 	return boissonFavorite;
