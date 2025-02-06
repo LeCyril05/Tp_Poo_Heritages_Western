@@ -36,6 +36,6 @@ int main()
 	clint.recherche(joe);
 	clint.emprisonne(joe);
 
-	//clint.sePresente();
+	
 	
 }
