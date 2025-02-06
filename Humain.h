@@ -12,7 +12,8 @@ protected:
 public:
 	Humain(const string nom, const string boissonFavorite="eau");
 	void parle(string);
-	void sePresente();
+	virtual void sePresente() const;
+	void presentezVous(Humain& humain);
 	void setBoissonFav(string);
 	string getNom();
 	string getBoissonFav();

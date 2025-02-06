@@ -13,7 +13,13 @@ void Humain::parle(string _texte)
 	cout << "(" << nom << ") -- " << _texte << endl ;
 }
 
-void Humain::sePresente()
+
+void Humain::presentezVous(Humain& humain)
+{
+	humain.sePresente();
+}
+
+void Humain::sePresente() const
 {
 	cout << "(" << nom << ") -- Bonjour, je m'appelle "  <<  nom <<  " et j'aime le " << boissonFavorite << endl;
 }

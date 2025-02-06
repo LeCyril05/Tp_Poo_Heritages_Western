@@ -10,9 +10,9 @@ Cowboy::Cowboy(const string nom/*=""*/, const string boissonFavorite/*="whisky"*
 
 void Cowboy::sePresente()
 {
-	{
-		cout << "(" << nom << ") -- Bonjour, je suis le  " << qualite << " " << nom << " et j'aime le " << boissonFavorite << endl;
-	}
+
+	cout << "(" << nom << ") -- Bonjour, je suis le " << qualite << " " << nom << " et j'aime le " << boissonFavorite << endl;
+
 }
 
 int Cowboy::getPopularite()

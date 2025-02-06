@@ -1,6 +1,7 @@
 #include "Brigand.h"
 #include "Dame.h"
 #include "Cowboy.h"
+#include "Sherif.h"
 #include <iostream>
 using namespace std;
 
@@ -39,7 +40,7 @@ void Brigand::kidnappe(Dame &dame)
 	dame.seFaitKidnapper();
 	incrementeNbDamesEnlevees();
 	augmenteRecompense();
-	cout << "(" << nom << ") -- Ah ah ! " << dame.getNom() << ", tu es mienne désormais !\n";
+	cout << "(" << nom << ") -- Ah ah ! " << dame.getNom() << ", tu es mienne desormais !\n";
 }
 
 void Brigand::seFaitEmpriossoner(Cowboy& cowboy)
@@ -51,6 +52,7 @@ void Brigand::seFaitEmpriossoner(Cowboy& cowboy)
 
 	}
 }
+
 
 void Brigand::augmenteRecompense(const int prix/*=100*/)
 {

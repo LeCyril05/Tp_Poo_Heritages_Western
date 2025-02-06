@@ -4,6 +4,8 @@
 #include "Dame.h"
 #include "Cowboy.h"
 #include "Brigand.h"
+#include "Barman.h"
+#include "Sherif.h"
 using namespace std;
 
 int main()
@@ -11,6 +13,10 @@ int main()
 	Cowboy lucky("Lucky Luke", "coca-cola");
 	Dame jenny("Jenny");
 	Brigand joe("Joe");
+	Barman robert("Robert", "biere", "Saloon Robert");
+	Sherif clint("Clint");
+
+	robert.sePresente();
 
 	//1. La rencontre ...
 	lucky.sePresente();
@@ -18,13 +24,18 @@ int main()
 
 	//2. Mais un brigand arrive ...
 	joe.sePresente();
+	clint.sePresente();
+	robert.sert(lucky);
+	robert.sert(jenny);
+	robert.sert(joe);
+	robert.sert(clint);
+
+
 	joe.kidnappe(jenny);
 
-	//3. Heureusement le cowboy s'interpose ...
-	lucky.sePresente();
-	joe.sePresente();
-	lucky.tire(joe);
-	lucky.emprisonne(joe);
-	lucky.libere(jenny);
+	clint.recherche(joe);
+	clint.emprisonne(joe);
 
+	//clint.sePresente();
+	
 }
