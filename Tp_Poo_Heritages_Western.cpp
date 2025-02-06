@@ -19,23 +19,22 @@ int main()
 	robert.sePresente();
 
 	//1. La rencontre ...
+	robert.sePresente();
 	lucky.sePresente();
 	jenny.sePresente();
+	clint.sePresente();
 
 	//2. Mais un brigand arrive ...
 	joe.sePresente();
-	clint.sePresente();
 	robert.sert(lucky);
 	robert.sert(jenny);
 	robert.sert(joe);
 	robert.sert(clint);
 
-
+	//3. Le brigand kidnappe une dame et se fait arreter par le sherif ... 
 	joe.kidnappe(jenny);
-
 	clint.recherche(joe);
 	clint.emprisonne(joe);
 
-	
 	
 }
