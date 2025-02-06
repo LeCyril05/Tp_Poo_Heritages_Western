@@ -15,14 +15,13 @@ int main()
 	Brigand joe("Joe");
 	Barman robert("Robert", "biere", "Saloon Robert");
 	Sherif clint("Clint");
-
-	robert.sePresente();
-
+	
 	//1. La rencontre ...
 	robert.sePresente();
 	lucky.sePresente();
 	jenny.sePresente();
 	clint.sePresente();
+	
 
 	//2. Mais un brigand arrive ...
 	joe.sePresente();
@@ -36,5 +35,4 @@ int main()
 	clint.recherche(joe);
 	clint.emprisonne(joe);
 
-	
 }
